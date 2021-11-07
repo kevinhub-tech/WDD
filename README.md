@@ -1,2 +1,2 @@
-# hamburger-navigation-menu
-Hamburger Navigation Menu with jQuery and CSS - 5x
+# WDD project (Website Design and Development)
+First introduction to programming.
