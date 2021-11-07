@@ -1,0 +1,42 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, figure, figcaption {
+	margin: 0;
+	padding: 0;}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	border: 0;}
+
+body, html {
+  height: 100%;}
+
+* {
+	background: none;
+	padding: 0;
+	margin: 0;}
+
+header {
+	display: table;
+    width: 100%;
+    padding: 0;
+	margin: 0;
+    background: url(images/header.jpg) no-repeat bottom center scroll;
+    background-color: none;
+	float: left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	 filter: grayscale(60%);
+	-webkit-filter: grayscale(60%);}
+
+section {
+	width: 100%;
+    padding: 0;
+	margin: 0;
+	float: left;
+    background: none;}

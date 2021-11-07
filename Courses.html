@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Stanislav Andreev</title>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<!-- https://fonts.google.com/ -->
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <!-- https://fontawesome.com/ -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+	<link  href="css/navigation-menu.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<style>
+  /*body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #031321;
+    font-family: consolas;
+}*/
+
+.ani-button a
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #bb0f0f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.ani-button a:hover
+{
+    color: #bd393f;
+    background: #bb0f0f;
+    box-shadow: 0 0 10px #bb0f0f, 0 0 40px #bb0f0f, 0 0 80px #bb0f0f;
+    transition-delay: 1s;
+}
+
+.ani-button a span
+{
+    position: absolute;
+    display: block;
+}
+
+.ani-button a span:nth-child(1)
+{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#bb0f0f);
+}
+
+.ani-button a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s; 
+}
+
+
+.ani-button a span:nth-child(3)
+{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#bb0f0f);
+}
+
+.ani-button a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s; 
+}
+
+
+.ani-button a span:nth-child(2)
+{
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#bb0f0f);
+}
+
+.ani-button a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; 
+}
+
+
+.ani-button a span:nth-child(4)
+{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#bb0f0f);
+}
+
+.ani-button a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s; 
+}
+  *{
+      margin:0;
+      padding:0;
+      font-family: 'Poppins',sans-serif;
+    }
+    .animation
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #000;
+      }
+    h2 span{
+         color:red;
+    }
+    h2{
+      position: relative;
+      margin:0;
+      font-size: 4em;
+      font-weight: 900;
+      color: #fff;
+      z-index: 1;
+      overflow: hidden;
+    }
+    h2:before{
+      content: '';
+      position: absolute;
+      left:120%;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(90deg,transparent 0%, #000 5%, #000 100%);
+      animation: animate 5.5% linear forwards;
+    }
+  
+    @keyframes animate
+    {
+      0%
+      {
+        left: 120%;
+      }
+      100%
+      {
+        left: -20%;
+      }
+    }
+
+.card-container{
+    position: relative;
+    width: 30rem;
+    perspective: 200rem;
+    height: 470px;
+}
+
+.card-container:hover .card-front{
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+}
+
+.card-back .card-body{
+  position:relative;
+}
+
+.card-body a{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  margin: -15% 0 0 -25%;
+
+}
+.s-m{
+              position: absolute;
+              top: 50%;
+              left:50%;
+              transform: translate(-50%,50%);
+            }
+
+            .s-m a{
+              display: inline-flex;
+              width:40px;
+              height: 40px;
+              background: #2c3e50;
+              color:white;
+              margin: 0.6px;
+              border-radius: 50%;
+              justify-content: center;
+              align-items:center;
+              transition: 0.4s;
+              font-size: 22px;
+            }
+
+            .s-m a:hover{
+              background:#e67e22;
+            }
+
+            .s-m a i{
+              transition: 0.4s;
+            }
+
+            .s-m a:hover > i{
+              transform: scale(1.6) rotate(25deg);
+
+			}
+			</style>
+<body>
+<!-- Header and nav -->
+<header id="home" class="header">
+		<section id="nav">
+
+			<div class="wrapper">
+				<nav class="site-nav">
+					<h1 class="logo">ABC Learning Center</h1>
+
+					<div class="menu-toggle">
+					  <div class="hamburger"></div>
+					</div>
+
+					<ul class="open desktop">
+						<li><a href="01.html">Home</a></li>
+						<li><a href="Courses.html">Courses</a></li>
+						<li><a href="aboutus.html">About us</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+						<li><a href="privacy.html">Privacy Policies</a></li>
+						<li><a href="sitemap.html">Site Map</a></li>
+						<li><a href="signup.html">Registration</a></li>
+					</ul>
+				</nav>
+			</div>
+    </section>
+  </header>
+  <br><br><br><br><br><br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="animation">
+        <h2><span>P</span>rogramming <span>is</span> fun</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="card-container mx-auto mt-5">
+          <div class="card card-front">
+              <img src="frontprogram.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><div class="text-center">Front-End Programming</div></h5>
+                <p class="card-text"><div class="text-justify">Front-End programming creates the form and the look of the website which will be visible to the end-user. It also contains numbers of codes to execute it. As the back-end programming, the front-end programming language  will be provided in the courses.</div></p>
+                
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+            <div class="card card-back">
+              <div class="card-body bg-secondary">
+                  <div class="ani-button">
+                      <a href="front-end.html">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                         Boost them
+                      </a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="card-container mx-auto mt-5">
+              <div class="card card-front">
+                  <img src="backprogram.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><div class="text-center">Back-End Programming</div></h5>
+                    <p class="card-text"><div class="text-justify">The back-end plays an important role of tha application as it maintains the actual function of the website or the application and there are plenty of programming langugae for it. And the courses will provides some programming language with specific details.</div></p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                  </div>
+                </div>
+                <div class="card card-back">
+                  <div class="card-body bg-secondary">
+                    <div class="ani-button">
+                      <a href="back-end.html">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                         Boost them
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+   <br>     
+	  <div class="container-fluid">
+			<div class="row" style="background: rgb(175, 69, 69) ; padding:40px;">
+			  <div class="col-sm-12">
+				<div class="h3 text-center text-uppercase">
+				  Connect us:
+				</div>
+				<hr style="background:black;">
+				<div class="s-m">
+					<a href="http://www.facebook.com">
+					<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="http://www.twitter.com">
+					<i class="fab fa-twitter"></i>
+					</a>
+					<a href="http://www.instagram.com">
+					<i class="fab fa-instagram"></i>
+					</a>
+					<a href="http://www.youtube.com">
+					<i class="fab fa-youtube" ></i>
+					</a>
+				</div>
+			  </div>
+</div>
+</div>
+<!-- script for navigation menu -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+<script src="js/01.js"></script>
+<!--
+<script type="text/javascript">
+	function p1() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "01.html", true);
+          xmlhttp.send();
+        }
+    function p2() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "Courses.html", true);
+          xmlhttp.send();
+        }
+        function p3() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "aboutus.html", true);
+          xmlhttp.send();
+        }
+		function p4() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "contactus.html", true);
+          xmlhttp.send();
+        }
+		function p5() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "privacy.html", true);
+          xmlhttp.send();
+        }
+		function p6() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "sitemap.html", true);
+          xmlhttp.send();
+        }
+		function p7() {
+        var xmlhttp=new XMLHttpRequest();
+          xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                document.getElementById("home").innerHTML =this.responseText;
+                }
+          }
+          xmlhttp.open("GET", "registration.html", true);
+          xmlhttp.send();
+        }
+    
+    
+</script>       --> 
+
+
+</body>
+</html>
