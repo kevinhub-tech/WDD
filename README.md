@@ -24,11 +24,10 @@ I have been introduced to Information Architecture and prototypes to implement t
 
 ### Prototype
 Firstly, this prototype has been implemented with balsamiq mockup in order to make it appealing to the students.
-
-![image](https://user-images.githubusercontent.com/67733905/143006807-16c9730a-3c15-41bb-9307-d378c1436465.png)
+<img src="https://github.com/kevinhub-tech/WDD/blob/master/Home.png?raw=true" width="50%">
 ### Result
 And then afterwards, the website has been implemented accordingly to the prototype with JQuery and Ajax.
 
-![image](https://user-images.githubusercontent.com/67733905/143007099-159f150b-adaf-4818-bdbb-6ea740ef3404.png)
+<img src="https://github.com/kevinhub-tech/WDD/blob/master/home.png?raw=true">
 
 
