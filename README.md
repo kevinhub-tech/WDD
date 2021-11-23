@@ -28,3 +28,5 @@ Firstly, this prototype has been implemented with balsamiq mockup in order to ma
 ### Result
 And then afterwards, the website has been implemented accordingly to the prototype with JQuery and Ajax.
 <img src="https://github.com/kevinhub-tech/WDD/blob/master/home.png?raw=true" width="50%">
+
+>The rest of the sources and codes for the website is available on the file section to explore by forking the repository,
